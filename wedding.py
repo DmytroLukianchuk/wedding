@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 main_url = "http://dimaplusnadia.wixsite.com/dimanadialovestory/fullscreen-page/comp-iui1lr44/f9697f2b-3439-4542-b4b7-748bfbab1a1f/0/%3Fi%3D0%26p%3Dc1dmp%26s%3Dstyle-iui32ah4"
-# driver = webdriver.Chrome()
 chromeOptions = Options()
 chromeOptions.add_argument("--kiosk")
 driver = webdriver.Chrome(chrome_options=chromeOptions)
@@ -34,4 +33,3 @@ while True:
         image_quantity = image_quantity - 1
 
     close_button.click()
-    # driver.close()
