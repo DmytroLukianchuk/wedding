@@ -4,7 +4,14 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 
 # set the time delay between slides
-TIME_BETWEEN_SLIDES = 5
+while True:
+    try:
+        TIME_BETWEEN_SLIDES = int(input("Enter the distance between photos in sec: "))
+    except ValueError:
+        print("You entered not a number. Please enter correct value")
+        continue
+    else:
+        break
 # navigation to the first image of the gallery
 main_url = "http://dimaplusnadia.wixsite.com/dimanadialovestory/fullscreen-page/comp-iui1lr44/f9697f2b-3439-4542-b4b7" \
            "-748bfbab1a1f/0/%3Fi%3D0%26p%3Dc1dmp%26s%3Dstyle-iui32ah4"
