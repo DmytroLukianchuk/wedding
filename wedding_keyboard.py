@@ -21,8 +21,7 @@ while True:
     # wait for iframe to be loaded
     time.sleep(2)
     # switch to the iframe
-    iframe = driver.find_element_by_tag_name('iframe')
-    driver.switch_to_frame(iframe)
+    driver.switch_to.frame(driver.find_element_by_tag_name('iframe'))
     # allocate expand and close buttons
     expand_button = driver.find_element_by_class_name('fullscreen-expand')
     close_button = driver.find_element_by_class_name('fullscreen-close')
